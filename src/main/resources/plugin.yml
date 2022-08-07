@@ -1,0 +1,9 @@
+name: Osiris
+version: '${project.version}'
+main: com.tnozamas.minecraftplugin.Osiris
+api-version: 1.19
+commands:
+  rename:
+    description: Can rename items to colored names!
+    usage: /rename <name>
+    aliases: rn
