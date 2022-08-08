@@ -41,6 +41,7 @@ public class ItemRename implements CommandExecutor {
                     try {
                         renameStr = HexTranslate.color(renameStr);
                         itemMeta.setDisplayName(renameStr);
+                        handItem.setItemMeta(itemMeta);
                         player.sendMessage(HexTranslate.color(prefix() + "&aThe item has been successfully renamed"));
                     } catch (Exception e) {
                         player.sendMessage(HexTranslate.color(prefix() + "&cAn error occurred while renaming the item"));
@@ -50,11 +51,5 @@ public class ItemRename implements CommandExecutor {
         }
         return true;
     }
-
-    //Insertar nombre al item
-    //Checkear una vez transformado el item si tiene más de 32 chars
-    //Si no, sigue normal
-    //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
-
 
 }
